@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome {{ session['user_name'] }}</h2>
+
+<a href="/create_post">Create New Post</a> |
+<a href="/profile">My Profile</a> |
+<a href="/logout">Logout</a>
+
+<hr>
+
+<h3>All Posts</h3>
+
+{% for post in posts %}
+    <h4>{{ post['title'] }}</h4>
+    <p>{{ post['content'] }}</p>
+    <a href="/post/{{ post['id'] }}">View</a>
+    <hr>
+{% endfor %}
+
+</body>
+</html>

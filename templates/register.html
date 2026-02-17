@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: Arial; background-color: white; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <div style="width: 300px; padding: 25px; border: 1px solid #ddd; border-radius: 5px;">
+        
+        <h2 style="text-align: center;">Register</h2>
+
+        <form action="/perform_registration" method="POST">
+            
+            <label>Name</label><br>
+            <input type="text" name="user_name" required 
+                   style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+            <label>Email</label><br>
+            <input type="email" name="user_email" required 
+                   style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+            <label>Password</label><br>
+            <input type="password" name="user_password" required 
+                   style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+            <button type="submit" 
+                    style="width: 100%; padding: 8px; margin-top: 10px;">
+                Register
+            </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="/">
+                <button type="button" style="padding: 5px 12px; font-size: 12px;">
+                    Back to Login
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
